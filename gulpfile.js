@@ -19,7 +19,7 @@ gulp.task("server", function () {
 
 gulp.task("styles", function () {
   return gulp
-    .src("src/sass/**/*.+(scss|sass)")
+    .src("src/sass/**/*.+(scss|sass|css)")
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(rename({ suffix: ".min", prefix: "" }))
     .pipe(autoprefixer())
