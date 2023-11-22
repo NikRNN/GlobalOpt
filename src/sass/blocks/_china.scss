@@ -1,0 +1,41 @@
+.china {
+  min-height: 342px;
+  background: url(../img/china.png) center center/cover no-repeat;
+  background-color: #404040;
+  background-blend-mode: multiply;
+  &__round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 102px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+  }
+
+  &__wrapper {
+    padding-top: 58px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 22px;
+    margin-top: 20px;
+  }
+  &__text {
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 985px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
