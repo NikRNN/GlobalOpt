@@ -91,6 +91,18 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  &__consultation-img {
+    position: absolute;
+    height: 102px;
+    width: 112px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -51px;
+    background-color: #fff;
   }
   &__consultation-rounded {
     width: 102px;
@@ -100,14 +112,49 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    position: absolute;
-
-    top: -56px;
-    // transform: translateY(50%);
+    padding: 0 5px;
     background-color: #fff;
+    position: relative;
+    z-index: 5;
     img {
       width: 59px;
       height: 61px;
+    }
+  }
+  &__consultation-btn-padding {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    z-index: 4;
+    top: -22.5px;
+  }
+  &__consultation-btn {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    position: relative;
+    z-index: 5;
+  }
+  .sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  input {
+    width: 270px;
+    height: 46px;
+    border-radius: 22px;
+    border: 1px solid #e9e9e9;
+    margin-right: 4px;
+    padding-left: 28px;
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
