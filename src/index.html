@@ -521,20 +521,37 @@
               <img src="icons/prices/consultation.png" alt="consultation" />
             </div>
           </div>
+
           <label for="first" class="sr-only">Ваше имя: </label>
-          <input type="text" id="first" placeholder="Ваше имя..." />
+          <input name="name" type="text" id="first" placeholder="Ваше имя..." />
 
           <label for="second" class="sr-only">Ваш телефон: </label>
-          <input type="tel" id="second" placeholder="Ваш номер телефона..." />
+          <input
+            name="tel"
+            type="tel"
+            id="second"
+            placeholder="Ваш номер телефона..."
+          />
 
           <label for="third" class="sr-only">Ваш e-mail: </label>
-          <input type="email" id="third" placeholder="Ваш e-mail..." />
-        </form>
+          <input
+            name="email"
+            type="email"
+            id="third"
+            placeholder="Ваш e-mail..."
+          />
 
-        <div class="prices__consultation-btn-padding">
-          <button class="prices__consultation-btn btn">Отправить заявку</button>
-        </div>
+          <div class="prices__consultation-btn-padding">
+            <button class="prices__consultation-btn btn">
+              Отправить заявку
+            </button>
+          </div>
+        </form>
       </div>
     </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

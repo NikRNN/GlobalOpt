@@ -125,10 +125,10 @@
     display: block;
     width: 200px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     background-color: #fff;
     z-index: 4;
-    top: -22.5px;
+    top: 143.5px;
   }
   &__consultation-btn {
     display: block;
@@ -156,5 +156,14 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+  label.error {
+    border: none;
+    text-align: start;
+    margin-bottom: 0px;
   }
 }
