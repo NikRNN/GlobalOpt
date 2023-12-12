@@ -19,4 +19,17 @@ $(document).ready(function () {
       },
     },
   });
+
+  //настройка slick-clider
+  $(".reviews__carousel").slick({
+    centerMode: true,
+    infinity: true,
+    centerPadding: "30px",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="../icons/carousel/btn_prev.png"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"> <img src="../icons/carousel/btn_next.png"></button>',
+  });
 });

@@ -14,6 +14,11 @@
   width: 1140px;
 }
 
+.container-carousel {
+  margin: 0 auto;
+  width: 1410px;
+}
+
 .divider {
   width: 148px;
   height: 1.5px;
@@ -31,3 +36,4 @@
 @import "blocks/prices";
 @import "blocks/manager";
 @import "blocks/scheme";
+@import "blocks/reviews";
