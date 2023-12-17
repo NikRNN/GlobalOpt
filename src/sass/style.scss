@@ -17,6 +17,7 @@
 .container-carousel {
   margin: 0 auto;
   width: 1410px;
+  position: relative;
 }
 
 .divider {
@@ -25,6 +26,16 @@
   background-color: $main-color;
   margin: 0 auto;
   margin-top: 22px;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 @import "blocks/promo";
@@ -37,3 +48,5 @@
 @import "blocks/manager";
 @import "blocks/scheme";
 @import "blocks/reviews";
+@import "blocks/questions";
+@import "blocks/map";

@@ -1,6 +1,6 @@
-//запуск jQuery и validate plugin + его настройка
-
+//запуск jQuery (после того, как будет готов html-документ)
 $(document).ready(function () {
+  //настройка validate plugin
   $(".prices__consultation-form").validate({
     rules: {
       name: "required",
@@ -20,16 +20,17 @@ $(document).ready(function () {
     },
   });
 
-  //настройка slick-clider
-  $(".reviews__carousel").slick({
-    centerMode: true,
-    infinity: true,
-    centerPadding: "30px",
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="../icons/carousel/btn_prev.png"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"> <img src="../icons/carousel/btn_next.png"></button>',
+  //настройка owlCarousel
+  $(".owl-carousel").owlCarousel({
+    items: 3,
+    // margin: 40,
+    loop: true,
+    autoplay: false,
+    nav: true,
+    center: true,
+    navText: [
+      "<img src='icons/carousel/btn_prev.png' />",
+      "<img src='icons/carousel/btn_next.png' />",
+    ],
   });
 });
