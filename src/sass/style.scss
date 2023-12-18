@@ -28,6 +28,14 @@
   margin-top: 22px;
 }
 
+.divider-footer {
+  width: 1171px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
 .sr-only {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -50,3 +58,4 @@
 @import "blocks/reviews";
 @import "blocks/questions";
 @import "blocks/map";
+@import "blocks/contacts";

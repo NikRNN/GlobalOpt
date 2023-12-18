@@ -1,0 +1,113 @@
+.contacts {
+  height: 210px;
+  background-color: #25333c;
+  padding: 24px 0 36px 0;
+  &__upper-wrapper {
+    display: flex;
+    height: 71px;
+    margin-top: 24px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+  &__wrapper1 {
+    display: flex;
+  }
+  &__logo {
+    margin: 0;
+    display: flex;
+    width: 522px;
+    align-items: center;
+  }
+  &-descr1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 20px;
+    margin: 0;
+  }
+  &-img {
+    margin-right: 43px;
+  }
+  &__info {
+    height: 45px;
+    color: #fff;
+    position: relative;
+    right: 0;
+  }
+  &__question {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+    text-align: right;
+  }
+  &__phone {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__btn {
+    display: block;
+    margin-left: 19px;
+    position: relative;
+    margin-right: 0;
+  }
+  &__bottom-wrapper {
+    margin-top: 19px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    width: 545px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  &__wrapper2 {
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  &-link {
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  &-policy {
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #ec644b;
+    &:hover {
+      color: #ec644b;
+    }
+  }
+  &-descr2 {
+    margin: 0 auto;
+    margin-right: 10px;
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+}
