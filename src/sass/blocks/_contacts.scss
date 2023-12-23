@@ -110,4 +110,9 @@
     font-weight: 300;
     color: #ffffff;
   }
+  &__form {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

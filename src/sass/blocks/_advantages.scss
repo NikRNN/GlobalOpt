@@ -3,7 +3,6 @@
   background-color: #f3f3f3;
   padding-top: 57px;
   padding-bottom: 51px;
-
   &__wrapper {
     padding-top: 32px;
     display: flex;
@@ -30,6 +29,13 @@
       font-size: 14px;
       font-weight: 300;
       color: #3a3a3a;
+    }
+  }
+  &__img {
+    &:hover {
+      animation-name: head-Shake;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1.5s;
     }
   }
 }
