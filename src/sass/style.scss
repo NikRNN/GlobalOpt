@@ -1,4 +1,6 @@
 @import "libs/bootstrap-reboot.min";
+@import "libs/animate.min";
+@import "libs/owl.carousel.min";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
 
 @import "base/variables";
@@ -9,6 +11,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }
 
 .container {
@@ -61,3 +67,4 @@
 @import "blocks/questions";
 @import "blocks/map";
 @import "blocks/contacts";
+@import "blocks/modal";

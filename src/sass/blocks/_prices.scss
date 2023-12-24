@@ -23,7 +23,14 @@
   &__item {
     border: 1px solid #e9e9e9;
     padding: 3px 3px 0 3px;
+    overflow: hidden;
     &-wrapper {
+      width: calc(200% + 6px);
+      display: flex;
+    }
+    &-content {
+      width: 50%;
+      transform: translateX(-100%);
       padding-top: 13px;
       padding-bottom: 26px;
       height: 294px;
@@ -31,7 +38,43 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      transition: 0.5s all;
+      &_active {
+        transform: translateX(0%);
+      }
     }
+    &-list {
+      width: 50%;
+      padding: 13px 11px 26px 11px;
+      transform: translateX(0%);
+      transition: 0.5s all;
+      position: relative;
+      li {
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #2e2e2e;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 6px;
+        list-style-type: none;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: 5px;
+          top: 4px;
+          background-color: $main-color;
+          left: -10px;
+        }
+      }
+      &_active {
+        transform: translateX(-100%);
+      }
+    }
+
     &-header {
       width: 260px;
       height: 61px;
@@ -73,12 +116,16 @@
     }
   }
   &__btn {
+    display: block;
+    width: 160px;
+  }
+  &__btn-back {
+    position: absolute;
     width: 160px;
     display: block;
-    // &:hover {
-    //   animation-name: bounce_btn;
-    //   animation-duration: 1s;
-    // }
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(calc(-50% - 5px));
   }
   &__consultation-title {
     font-size: 28px;
@@ -161,5 +208,13 @@
     border: none;
     text-align: start;
     margin-bottom: 0px;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #ffffff !important;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
   }
 }

@@ -72,6 +72,7 @@ $(document).ready(function () {
       url: "mailer/smart.php", //тут указали обработчик нашей отправки, это будет файл смарт php
       data: $(this).serialize(), //указали, какие данные отправляем на сервер; для каждого e будут свои данные - this ссылается на каждый конкретный e; serialize - форматирует данные в понятный для сервера формат
     }).done(function () {
+      $("#thanks").fadeIn("slow"); //после успешной отправки всплывает модальное окно с благодарностью
       //тут указали, что делать дальше, когда запрос выполнен
       $(this).find("input").val(""); //находим инпуты, их значения приводим к пустой строке
 
@@ -81,4 +82,32 @@ $(document).ready(function () {
   });
 
   new WOW().init();
+
+  //закрываем модальное окно при нажатии на крестик
+  $(".modal__close").on("click", function () {
+    $("#thanks").fadeOut("slow");
+  });
+
+  //при нажатии на кнопку подробнее в ценах переворачивает слайд с информацией
+  $(".prices__btn").each(function (i) {
+    //тут мы выбираем все элементы с этим классом
+    $(this).on("click", function (e) {
+      //при клике на конкретный элемент отменяем поведение браузера
+      e.preventDefault();
+      $(".prices__item-content")
+        .eq(i) //ВЫБИРАЕМ КОНКРЕТНЫЙ ЭЛЕМЕНТ (А НЕ ВСЕ С УКАЗАННЫМ КЛАССОМ)
+        .toggleClass("prices__item-content_active"); //ДОБАВЛЯЕМ ИЛИ УБИРАЕМ КЛАСС
+      $(".prices__item-list").eq(i).toggleClass("prices__item-list_active");
+    });
+  });
+  //при нажатии на кнопку назад слайд возвращается
+  $(".prices__btn-back").each(function (i) {
+    $(this).on("click", function (e) {
+      e.preventDefault();
+      $(".prices__item-content")
+        .eq(i)
+        .toggleClass("prices__item-content_active");
+      $(".prices__item-list").eq(i).toggleClass("prices__item-list_active");
+    });
+  });
 });
