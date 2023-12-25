@@ -1,0 +1,79 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    &__menu {
+      margin-left: 30px;
+      &-item {
+        font-size: 13px;
+      }
+    }
+    &__info {
+      margin-left: 34px;
+    }
+    &__phone {
+      font-size: 14px;
+    }
+    &__btn {
+      padding: 16px 20px 16px 20px;
+      font-size: 10px;
+    }
+    &__title {
+      font-size: 50px;
+      margin-top: 18px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      margin-top: 0;
+    }
+    &__descr {
+      &-item {
+        width: 240px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+    .btn-big {
+      height: 50px;
+      padding: 16px 40px 21px 40px;
+      font-size: 14px;
+    }
+  }
+  .advantages {
+    padding-top: 50px;
+    &__wrapper {
+      &-item {
+        max-width: 440px;
+      }
+    }
+    .animate__fadeInRight {
+      .advantages__wrapper-item {
+        &:nth-child(3),
+        &:nth-child(4) {
+          transform: translateY(17px);
+        }
+      }
+    }
+  }
+  .job {
+    &__wrapper {
+      margin: 0 auto;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: 380px;
+    }
+
+    &__item-img {
+      width: 100%;
+    }
+    &__item {
+      &-title {
+        padding-top: 24px;
+      }
+      &-descr {
+        text-align: center;
+      }
+    }
+  }
+}
