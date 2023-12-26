@@ -2,6 +2,9 @@
   .container {
     max-width: 960px;
   }
+  .container-carousel {
+    max-width: 980px;
+  }
   .promo {
     &__menu {
       margin-left: 30px;
@@ -60,8 +63,9 @@
   .job {
     &__wrapper {
       margin: 0 auto;
-      grid-template-columns: repeat(3, 300px);
+      grid-template-columns: repeat(3, 290px);
       grid-template-rows: 380px;
+      justify-content: center;
     }
 
     &__item-img {
@@ -71,9 +75,47 @@
       &-title {
         padding-top: 24px;
       }
-      &-descr {
-        text-align: center;
+    }
+  }
+  .prices {
+    &__wrapper {
+      grid-template-columns: repeat(2, 320px);
+      grid-template-rows: repeat(2, 360px);
+      row-gap: 50px;
+      column-gap: 70px;
+      justify-content: center;
+    }
+  }
+
+  .scheme {
+    &__wrapper {
+      justify-content: space-between;
+      &-item {
+        width: 240px;
       }
+    }
+  }
+
+  .reviews {
+    &__carousel {
+      justify-content: space-between;
+    }
+    .owl-item > div {
+      transform: scale(0.7);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0.6;
+    }
+    .center > div {
+      transform: scale(1);
+      opacity: 1;
+    }
+    .owl-prev,
+    .owl-next {
+      left: 380px;
+    }
+    .owl-next {
+      right: 415px;
+      left: auto;
     }
   }
 }

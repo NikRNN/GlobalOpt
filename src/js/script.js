@@ -54,6 +54,11 @@ $(document).ready(function () {
       "<img src='icons/carousel/btn_prev.png' />",
       "<img src='icons/carousel/btn_next.png' />",
     ],
+    responsive: {
+      992: {
+        items: 3,
+      },
+    },
   });
 
   //настройка маски для ввода номера телефона - плагин maskedinput
