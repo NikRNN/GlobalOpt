@@ -12,17 +12,12 @@
     color: #2e2e2e;
   }
   &__carousel {
-    margin: 0 auto;
     margin-top: 31px;
     position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     &-item {
       display: flex !important;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
     }
     &-img {
       width: 114px;
@@ -41,19 +36,22 @@
       font-size: 14.1px;
       font-weight: 300;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .owl-item > div {
+    .owl-item {
       transform: scale(0.6);
       transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       opacity: 0.6;
     }
-    .center > div {
+    .center {
       transform: scale(1);
       opacity: 1;
     }
   }
 }
-
 .owl-prev,
 .owl-next {
   border: none;
@@ -69,8 +67,10 @@
     outline: none;
   }
 }
-
 .owl-next {
   right: 600px;
   left: auto;
+}
+.owl-stage {
+  display: flex;
 }

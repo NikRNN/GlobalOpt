@@ -97,25 +97,20 @@
   }
 
   .reviews {
-    &__carousel {
-      justify-content: space-between;
-    }
-    .owl-item > div {
-      transform: scale(0.7);
-      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      opacity: 0.6;
-    }
-    .center > div {
-      transform: scale(1);
-      opacity: 1;
-    }
+    padding-bottom: 0px;
     .owl-prev,
     .owl-next {
       left: 380px;
     }
     .owl-next {
-      right: 415px;
+      right: 390px;
       left: auto;
+    }
+  }
+
+  .contacts {
+    .divider-footer {
+      width: 950px;
     }
   }
 }
