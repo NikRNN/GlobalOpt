@@ -67,7 +67,6 @@
       grid-template-rows: 380px;
       justify-content: center;
     }
-
     &__item-img {
       width: 100%;
     }
@@ -86,7 +85,6 @@
       justify-content: center;
     }
   }
-
   .scheme {
     &__wrapper {
       justify-content: space-between;
@@ -95,7 +93,6 @@
       }
     }
   }
-
   .reviews {
     padding-bottom: 0px;
     .owl-prev,
@@ -107,10 +104,121 @@
       left: auto;
     }
   }
-
   .contacts {
     .divider-footer {
       width: 950px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .promo {
+    &__hamburger {
+      display: block;
+      top: 50px;
+      right: 30px;
+      height: 17px;
+      width: 27px;
+      cursor: pointer;
+      z-index: 10;
+      span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: $main-color;
+        transition: 0.5s all;
+        margin-bottom: 3px;
+      }
+      &-active {
+        span {
+          &:nth-child(1) {
+            margin-bottom: -1.5px;
+            transform: translateY(3px) rotate(-45deg);
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: translateY(3px) rotate(45deg);
+            margin-bottom: -0.5px;
+          }
+        }
+      }
+    }
+    &__header {
+      justify-content: space-evenly;
+    }
+    &__btn {
+      margin-left: 0;
+    }
+    &__info {
+      margin-left: 150px;
+    }
+    &__main-descr {
+      margin-top: 15px;
+    }
+    &__menu {
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 10;
+      left: -100%;
+      transition: all 0.6s;
+      top: 0;
+      width: 40%;
+      min-height: 100vh;
+      margin: 0;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+        &:before {
+          display: none;
+        }
+      }
+      &-active {
+        left: 0;
+      }
+      &-item {
+        padding: 0;
+        border: 0;
+        margin: 10px 0;
+      }
+    }
+    &__circle {
+      div {
+        &:before {
+          width: 300px;
+          right: -330px;
+        }
+        &:after {
+          width: 300px;
+          left: -330px;
+        }
+      }
+    }
+    &__descr {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &-item {
+        width: 270px;
+        margin-bottom: 15px;
+        &:nth-child(4) {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+  .advantages {
+    &__wrapper-item {
+      width: 320px;
     }
   }
 }

@@ -116,3 +116,24 @@ $(document).ready(function () {
     });
   });
 });
+
+//настройка открытия меню при нажатии на гамбургер
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".promo__menu"), //в переменную помещаем элемент с определенным классом
+    menuLink = document.querySelectorAll(".promo__menu-link"), // аналогично
+    hamburger = document.querySelector(".promo__hamburger"); //аналогично
+
+  hamburger.addEventListener("click", () => {
+    //добавили событие: при клике добавляется класс гамбургеру и меню
+    hamburger.classList.toggle("promo__hamburger-active");
+    menu.classList.toggle("promo__menu-active");
+  });
+
+  menuLink.forEach((item) => {
+    //для каждого элемента меню мы добавляем обработчик событий:при клике на элемент класс активности переключается, а меню закрывается
+    item.addEventListener("click", () => {
+      hamburger.classList.toggle("promo__hamburger-active");
+      menu.classList.toggle("promo__menu-active");
+    });
+  });
+});
