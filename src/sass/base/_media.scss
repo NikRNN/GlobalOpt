@@ -325,3 +325,165 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .container-carousel {
+    max-width: 560px;
+  }
+  .promo {
+    &__circle {
+      div {
+        &:before {
+          width: 220px;
+          right: -250px;
+        }
+        &:after {
+          width: 220px;
+          left: -250px;
+        }
+      }
+    }
+    &__info {
+      margin-left: 70px;
+    }
+    &__btn {
+      width: 120px;
+      padding-top: 16px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .btn-big {
+      width: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .advantages {
+    &__wrapper-item {
+      width: 235px;
+    }
+    .animate__fadeInRight {
+      .advantages__wrapper-item {
+        &:nth-child(2) {
+          transform: translateY(0px);
+        }
+        &:nth-child(3) {
+          transform: translateY(17px);
+        }
+        &:nth-child(4) {
+          margin-top: 68px;
+        }
+      }
+    }
+  }
+
+  .job {
+    &__title {
+      line-height: 27px;
+    }
+    &__item {
+      &:nth-child(3) {
+        width: 350px;
+      }
+    }
+  }
+
+  .prices {
+    &__wrapper {
+      grid-template-columns: 350px;
+    }
+    input {
+      width: 250px;
+    }
+    #third {
+      width: 300px;
+    }
+    &__consultation-form {
+      padding-top: 50px;
+      padding-bottom: 45px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: space-between;
+      height: 220px;
+    }
+    &__consultation-btn-padding {
+      top: 197.5px;
+    }
+  }
+  .manager {
+    &__text {
+      width: 540px;
+    }
+  }
+  .scheme {
+    &__wrapper1 {
+      flex-wrap: wrap;
+      .scheme__wrapper-item {
+        &:nth-child(3) {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__wrapper-item {
+      &:nth-child(4) {
+        margin: 0;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  .reviews {
+    &__carousel-text {
+      width: 520px;
+    }
+    &__carousel-item {
+      margin: 0 auto;
+    }
+    .owl-prev,
+    .owl-next {
+      left: 170px;
+    }
+    .owl-next {
+      left: auto;
+      right: 182px;
+    }
+  }
+
+  .questions {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #third {
+      margin-top: 6px;
+      width: 428px;
+    }
+    #first {
+      margin-right: 5px;
+    }
+    #second {
+      margin-left: 5px;
+    }
+  }
+
+  .contacts {
+    .divider-footer {
+      width: 520px;
+    }
+    &-descr1 {
+      display: none;
+    }
+    &__btn {
+      width: 150px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 14.5px;
+    }
+    &-policy {
+      margin-right: 15px;
+    }
+  }
+}

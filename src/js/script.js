@@ -59,6 +59,10 @@ $(document).ready(function () {
         items: 1,
         center: false,
       },
+      577: {
+        items: 1,
+        center: false,
+      },
     },
   });
 
