@@ -55,8 +55,9 @@ $(document).ready(function () {
       "<img src='icons/carousel/btn_next.png' />",
     ],
     responsive: {
-      992: {
-        items: 3,
+      769: {
+        items: 1,
+        center: false,
       },
     },
   });
