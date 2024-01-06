@@ -379,7 +379,6 @@
       }
     }
   }
-
   .job {
     &__title {
       line-height: 27px;
@@ -390,7 +389,6 @@
       }
     }
   }
-
   .prices {
     &__wrapper {
       grid-template-columns: 350px;
@@ -434,7 +432,6 @@
       }
     }
   }
-
   .reviews {
     &__carousel-text {
       width: 520px;
@@ -451,7 +448,6 @@
       right: 182px;
     }
   }
-
   .questions {
     &__wrapper {
       flex-wrap: wrap;
@@ -468,7 +464,6 @@
       margin-left: 5px;
     }
   }
-
   .contacts {
     .divider-footer {
       width: 520px;
@@ -484,6 +479,83 @@
     }
     &-policy {
       margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0, 10px;
+    width: 100%;
+  }
+  .container-carousel {
+    padding: 0, 5px;
+    width: 100%;
+  }
+
+  .promo {
+    &__main-form {
+      display: none;
+    }
+    &__circle {
+      display: none;
+    }
+    &__info {
+      margin-right: 10px;
+      margin-left: 50px;
+    }
+    &__main-descr {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+  }
+  .advantages {
+    padding: 30px 0 30px 0;
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-item {
+        width: 280px;
+        padding: 0;
+        padding-bottom: 30px;
+      }
+    }
+    .animate__fadeInRight {
+      padding-top: 30px;
+      .advantages__wrapper-item {
+        padding: 0;
+        padding-bottom: 30px;
+        &:nth-child(2) {
+          transform: translateY(0px);
+        }
+        &:nth-child(3) {
+          transform: translateY(0px);
+          .advantages__wrapper-descr {
+            padding-left: 9px;
+          }
+        }
+        &:nth-child(4) {
+          margin-top: 0px;
+          padding-bottom: 0px;
+        }
+      }
+    }
+    .advantages__wrapper-descr {
+      &:nth-child(7) {
+        padding-left: 10px;
+      }
     }
   }
 }
