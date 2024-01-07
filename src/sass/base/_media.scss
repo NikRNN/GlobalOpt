@@ -290,7 +290,7 @@
       width: 100%;
     }
     &__carousel-text {
-      width: 700px;
+      width: 100%;
     }
   }
   .questions-form {
@@ -433,7 +433,7 @@
   }
   .reviews {
     &__carousel-text {
-      width: 520px;
+      width: 100%;
     }
     &__carousel-item {
       margin: 0 auto;
@@ -666,7 +666,98 @@
 
   .reviews {
     &__carousel-text {
+      width: 100%;
+    }
+    &__carousel-item {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__descr {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      padding: 0;
+      margin: 10px;
+      background-color: $main-color !important;
+      opacity: 0.5;
+    }
+    .owl-dot.active {
+      opacity: 1;
+    }
+  }
+
+  .questions {
+    padding: 30px 0 30px 0;
+    &-form {
       width: 300px;
+    }
+    input {
+      width: 250px;
+      margin-bottom: 10px;
+    }
+    #first,
+    #second,
+    #third {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    #fourth {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+    &__body {
+      padding: 17px 20px 17px 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .contacts {
+    &__logo {
+      display: none;
+    }
+
+    &__wrapper1 {
+      margin: 0 auto;
+    }
+    &__btn {
+      padding: 5px 5px 5px 5px;
+      width: 120px;
+      font-size: 10px;
+    }
+    &__info {
+      right: auto;
+    }
+    .divider-footer {
+      width: 90%;
+    }
+    &__bottom-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__wrapper2 {
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    &__links {
+      text-align: center;
     }
   }
 }

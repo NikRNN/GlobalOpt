@@ -45,10 +45,10 @@ $(document).ready(function () {
   //настройка owlCarousel
   $(".owl-carousel").owlCarousel({
     items: 3,
-    // margin: 40,
     loop: true,
     autoplay: false,
     nav: true,
+    dots: false,
     center: true,
     navText: [
       "<img src='icons/carousel/btn_prev.png' />",
@@ -58,14 +58,22 @@ $(document).ready(function () {
       769: {
         items: 1,
         center: false,
+        nav: true,
+        dots: false,
       },
       577: {
         items: 1,
         center: false,
+        nav: true,
+        dots: false,
       },
-      321: {
+      319: {
         items: 1,
         center: false,
+        nav: false,
+        dots: true,
+        responsiveClass: true,
+        loop: false,
       },
     },
   });
