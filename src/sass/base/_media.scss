@@ -252,7 +252,6 @@
       }
     }
   }
-
   .prices {
     &__wrapper {
       column-gap: 25px;
@@ -556,6 +555,118 @@
       &:nth-child(7) {
         padding-left: 10px;
       }
+    }
+  }
+
+  .job {
+    padding: 30px 0 30px 0;
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__descr {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__wrapper {
+      grid-template-columns: 310px;
+      column-gap: 0;
+    }
+    &__item {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      &:nth-child(3) {
+        width: 310px;
+      }
+      &-descr {
+        text-align: center;
+      }
+    }
+  }
+
+  .china {
+    padding: 30px 0 30px 0;
+    &__text {
+      font-size: 17px;
+      width: 90%;
+    }
+  }
+
+  .prices {
+    padding: 30px 0 30px 0;
+    #third {
+      width: 250px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__descr {
+      font-size: 15px;
+      line-height: 20px;
+      width: 90%;
+    }
+    &__wrapper {
+      grid-template-columns: 310px;
+      grid-template-rows: 360px;
+      column-gap: 0;
+    }
+    &__consultation-form {
+      min-height: 330px;
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 71px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      input {
+        width: 250px;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 5px;
+        }
+        &:first-child {
+          margin-top: 60px;
+        }
+      }
+    }
+    &__consultation-btn-padding {
+      top: 307.5px;
+    }
+    &__consultation-title {
+      margin-top: 35px;
+    }
+    label.error {
+      border: none;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .manager {
+    padding: 30px 0 30px 0;
+    &__text {
+      font-size: 17px;
+      width: 90%;
+    }
+  }
+
+  .scheme {
+    padding: 30px 0 30px 0;
+    &-title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__wrapper {
+      justify-content: center;
+    }
+    &__wrapper1 {
+      justify-content: center;
+    }
+  }
+
+  .reviews {
+    &__carousel-text {
+      width: 300px;
     }
   }
 }

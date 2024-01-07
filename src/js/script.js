@@ -63,6 +63,10 @@ $(document).ready(function () {
         items: 1,
         center: false,
       },
+      321: {
+        items: 1,
+        center: false,
+      },
     },
   });
 
