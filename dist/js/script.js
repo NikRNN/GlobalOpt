@@ -55,19 +55,22 @@ $(document).ready(function () {
       "<img src='icons/carousel/btn_next.png' />",
     ],
     responsive: {
+      991: {
+        items: 3,
+      },
       769: {
         items: 1,
-        center: false,
+        center: true,
         nav: true,
         dots: false,
       },
-      577: {
+      576: {
         items: 1,
         center: false,
         nav: true,
         dots: false,
       },
-      319: {
+      320: {
         items: 1,
         center: false,
         nav: false,

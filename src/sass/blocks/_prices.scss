@@ -1,7 +1,7 @@
 .prices {
   padding-top: 53px;
   padding-bottom: 55px;
-  min-height: 950px;
+  min-height: 800px;
   &__descr {
     padding-top: 17px;
     font-size: 21px;
@@ -16,7 +16,7 @@
   &__wrapper {
     margin-top: 34px;
     display: grid;
-    grid-template-columns: repeat(2, 267px);
+    grid-template-columns: repeat(4, 267px);
     grid-template-rows: 360px;
     column-gap: 26px;
   }
