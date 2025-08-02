@@ -1,0 +1,77 @@
+.reviews {
+  min-height: 470px;
+  padding-top: 51px;
+  padding-bottom: 35px;
+  position: relative;
+  &__descr {
+    margin-top: 17px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #2e2e2e;
+  }
+  &__carousel {
+    margin-top: 31px;
+    position: relative;
+    &-item {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-img {
+      width: 114px;
+      height: 114px;
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+    &-title {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #3a3a3a;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-size: 14.1px;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .owl-item {
+      transform: scale(0.6);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0.6;
+    }
+    .center {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+.owl-prev,
+.owl-next {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  width: 14px;
+  height: 46px;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  left: 590px;
+  z-index: 3;
+  &:focus {
+    outline: none;
+  }
+}
+.owl-next {
+  right: 600px;
+  left: auto;
+}
+.owl-stage {
+  display: flex;
+  width: 100%;
+}

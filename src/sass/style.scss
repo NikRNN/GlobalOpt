@@ -1,0 +1,72 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/animate.min";
+@import "libs/owl.carousel.min";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+
+@import "base/variables";
+@import "base/animation";
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.container-carousel {
+  margin: 0 auto;
+  width: 1410px;
+  position: relative;
+}
+
+.divider {
+  width: 148px;
+  height: 1.5px;
+  background-color: $main-color;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+.divider-footer {
+  width: 1171px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@import "blocks/promo";
+@import "blocks/buttons";
+@import "blocks/titles";
+@import "blocks/advantages";
+@import "blocks/job";
+@import "blocks/china";
+@import "blocks/prices";
+@import "blocks/manager";
+@import "blocks/scheme";
+@import "blocks/reviews";
+@import "blocks/questions";
+@import "blocks/map";
+@import "blocks/contacts";
+@import "blocks/modal";
+
+@import "base/media";
